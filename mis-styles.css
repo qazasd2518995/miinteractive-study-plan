@@ -524,36 +524,47 @@ body.semester-4 {
     height: 6px;
 } 
 /* ===== Elective card tune-up =================================== */
-/* 強化選修課程視覺效果 */
+/* 強化選修課程視覺效果 - 低飽和度背景提升可讀性 */
 .course-card.elective {
-    background: linear-gradient(135deg, #ff6347 10%, #ff9f40 100%);
+    background: linear-gradient(135deg, #ff9f40 0%, #ffd0a4 100%);
     border: 2px solid #ff7f50;
     box-shadow: 0 6px 16px rgba(255, 99, 71, 0.25);
+    color: #1f2937;
+    padding-top: 40px;  /* 原本 20px → 40px，避免被標籤遮擋 */
 }
 
-/* MI選修標籤條 */
+/* MI選修標籤條 - 移出卡片上方避免遮擋文字 */
 .course-card.elective::before {
     background: linear-gradient(135deg, #ff6347, #ff7f50);
     color: #fff;
     letter-spacing: 1px;
     box-shadow: 0 2px 6px rgba(255, 99, 71, 0.35);
+    top: -14px;         /* 往上移出卡片 */
+    left: 12px;         /* 兩側內縮避免頂到圓角 */
+    right: 12px;
+    height: 22px;       /* 稍厚一點 */
+    line-height: 22px;  /* 文字垂直置中 */
+    z-index: 2;         /* 確保在陰影之上 */
 }
 
-/* 學分徽章採主色系 + 白字 */
+/* 學分徽章調整位置避免被標籤遮擋 */
 .course-card.elective .credits-badge {
     background: linear-gradient(135deg, #ff6347, #ff7f50);
     color: #fff;
+    position: relative;
+    top: 2px;           /* 往下移避免被標籤遮擋 */
+    z-index: 3;         /* 確保在標籤之上 */
 }
 
-/* 相關經驗圖示與標題顏色同步主色 */
+/* 相關經驗圖示與標題 - 使用較深的橘色提升對比 */
 .course-card.elective .course-experience i,
 .course-card.elective .experience-note {
-    color: #ff6347;
+    color: #d45500;     /* 暗橘色，保持對比度 */
 }
 
-/* 標題文字改深色以提升可讀性 */
+/* 標題文字 - 幾乎黑色，最佳可讀性 */
 .course-card.elective h4 {
-    color: #1f2937;
+    color: #111827;
 }
 
 /* 整行文字靠上更集中 */
