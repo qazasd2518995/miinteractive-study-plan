@@ -530,21 +530,24 @@ body.semester-4 {
     border: 2px solid #ff7f50;
     box-shadow: 0 6px 16px rgba(255, 99, 71, 0.25);
     color: #1f2937;
-    padding-top: 40px;  /* 原本 20px → 40px，避免被標籤遮擋 */
+    padding-top: 52px;  /* 保證標題與標籤間有 10-12px 空隙 */
 }
 
-/* MI選修標籤條 - 移出卡片上方避免遮擋文字 */
+/* MI選修標籤條 - 貼住邊框頂端，滿版寬度 */
 .course-card.elective::before {
     background: linear-gradient(135deg, #ff6347, #ff7f50);
     color: #fff;
     letter-spacing: 1px;
     box-shadow: 0 2px 6px rgba(255, 99, 71, 0.35);
-    top: -14px;         /* 往上移出卡片 */
-    left: 12px;         /* 兩側內縮避免頂到圓角 */
-    right: 12px;
-    height: 22px;       /* 稍厚一點 */
-    line-height: 22px;  /* 文字垂直置中 */
-    z-index: 2;         /* 確保在陰影之上 */
+    top: -2px;                      /* 貼住邊框頂端 */
+    left: 0;                        /* 滿版寬度，避免色差 */
+    right: 0;
+    height: 26px;                   /* 增加高度給文字留白 */
+    line-height: 26px;              /* 文字垂直置中 */
+    border-top-left-radius: 15px;   /* 圓角與卡片一致 */
+    border-top-right-radius: 15px;
+    font-size: 0.72rem;             /* 稍微縮小字體 */
+    z-index: 2;                     /* 確保在陰影之上 */
 }
 
 /* 學分徽章調整位置避免被標籤遮擋 */
@@ -570,4 +573,9 @@ body.semester-4 {
 /* 整行文字靠上更集中 */
 .course-header {
     margin-bottom: 10px;
+}
+
+/* 選修卡片標題與徽章垂直置中對齊 */
+.course-card.elective .course-header {
+    align-items: center;  /* 垂直置中看起來更平衡 */
 }
