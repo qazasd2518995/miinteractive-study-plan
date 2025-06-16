@@ -524,37 +524,39 @@ body.semester-4 {
     height: 6px;
 } 
 /* ===== Elective card tune-up =================================== */
-/* 1. 卡片底色：從高飽和粉 → 柔和橘紅漸層並提高透明度 */
+/* 強化選修課程視覺效果 */
 .course-card.elective {
-    background: linear-gradient(135deg, rgba(255, 99, 71, 0.15), rgba(255, 159, 64, 0.10));
-    border: 2px solid rgba(255, 99, 71, 0.5);
+    background: linear-gradient(135deg, #ff6347 10%, #ff9f40 100%);
+    border: 2px solid #ff7f50;
+    box-shadow: 0 6px 16px rgba(255, 99, 71, 0.25);
 }
 
-/* 2. 標籤條改白字＆微陰影，字距更舒適 */
+/* MI選修標籤條 */
 .course-card.elective::before {
     background: linear-gradient(135deg, #ff6347, #ff7f50);
+    color: #fff;
     letter-spacing: 1px;
     box-shadow: 0 2px 6px rgba(255, 99, 71, 0.35);
 }
 
-/* 3. 3學分徽章採主色系 + 白字 */
+/* 學分徽章採主色系 + 白字 */
 .course-card.elective .credits-badge {
     background: linear-gradient(135deg, #ff6347, #ff7f50);
     color: #fff;
 }
 
-/* 4. 相關經驗圖示與標題顏色同步主色 */
+/* 相關經驗圖示與標題顏色同步主色 */
 .course-card.elective .course-experience i,
 .course-card.elective .experience-note {
     color: #ff6347;
 }
 
-/* 5. 標題文字改深色以提升可讀性 (避免被底色吃掉) */
+/* 標題文字改深色以提升可讀性 */
 .course-card.elective h4 {
-    color: #1f2937;           /* 深灰 */
+    color: #1f2937;
 }
 
-/* 6. 若想讓整行文字靠上更集中，可加小間距 */
+/* 整行文字靠上更集中 */
 .course-header {
-    margin-bottom: 10px;      /* 原來 15px 改 10px */
+    margin-bottom: 10px;
 }
