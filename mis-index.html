@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台科大資訊管理學系 雙主修修業計劃 申請人：鄭兆翔</title>
+    <link rel="stylesheet" href="mis-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="university-info">
+                <h1><i class="fas fa-database"></i> 台灣科技大學</h1>
+                <h2>資訊管理學系 雙主修修業計劃</h2>
+                <p class="applicant-name">申請人：鄭兆翔</p>
+                <p class="credit-structure">專業必修 27 學分 + 專業選修 13 學分 + 基礎課程 18 學分</p>
+            </div>
+            <div class="total-credits">
+                <span class="credits-label">總學分</span>
+                <span class="credits-value" id="totalCredits">58</span>
+            </div>
+        </header>
+
+        <nav class="semester-nav">
+            <button class="semester-btn active" data-semester="1">
+                <i class="fas fa-calendar-alt"></i>
+                第一學期
+                <span class="credits">15學分</span>
+            </button>
+            <button class="semester-btn" data-semester="2">
+                <i class="fas fa-calendar-alt"></i>
+                第二學期
+                <span class="credits">15學分</span>
+            </button>
+            <button class="semester-btn" data-semester="3">
+                <i class="fas fa-calendar-alt"></i>
+                第三學期
+                <span class="credits">14學分</span>
+            </button>
+            <button class="semester-btn" data-semester="4">
+                <i class="fas fa-calendar-alt"></i>
+                第四學期
+                <span class="credits">14學分</span>
+            </button>
+        </nav>
+
+        <main class="main-content">
+            <div class="semester-content active" id="semester-1">
+                <div class="semester-header">
+                    <h3><i class="fas fa-database"></i> 第一學期課程 (15學分)</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>物件導向程式語言</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-python"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>Python Kaggle 專題練習 OOP 與模組化</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>計算機概論</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>多語 NLP 系統架構解析 (Chatbot 專案)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>微積分(上)</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>GPA 迴歸模型：曲線擬合與極值判定</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>統計學(上)</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-chart-bar"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>Uber 價格迴歸分析、繪製 ggplot 圖表</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>會計學</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-calculator"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>公益捐款平台金流與收支報表設計</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester-content" id="semester-2">
+                <div class="semester-header">
+                    <h3><i class="fas fa-database"></i> 第二學期課程 (15學分)</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>資料庫管理系統</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-database"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>MySQL 建置地熱/醫療 DB 與查詢優化</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>資料結構</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-sitemap"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>TensorFlow 井字棋強化學習：樹結構搜尋</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>管理數學</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-calculator"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>Kaggle 最短路徑問題 → 線性規劃求解</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>微積分(下)</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>股票指數微分方程預測 (Jupyter)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>統計學(下)</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-chart-pie"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>台灣人口分群與假設檢定</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester-content" id="semester-3">
+                <div class="semester-header">
+                    <h3><i class="fas fa-database"></i> 第三學期課程 (14學分)</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>行動裝置程式設計</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>React Native 公益捐款 App 原型</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>系統分析與設計</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-project-diagram"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>UML 描繪 Chatbot API 流程</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>資訊網路</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-network-wired"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>Python Scapy 封包擷取與安全分析</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>管理與企業倫理</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-balance-scale"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>翻譯 AI 倫理論壇並撰寫心得</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card elective">
+                        <div class="course-header">
+                            <h4>MI選修：大數據分析</h4>
+                            <span class="credits-badge elective-badge">2學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-chart-area"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>Spark 影評情感分析實作</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester-content" id="semester-4">
+                <div class="semester-header">
+                    <h3><i class="fas fa-database"></i> 第四學期課程 (14學分)</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>管理資訊系統</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-desktop"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>ERP 資料儀表板整合 Power BI</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h4>作業研究(一)</h4>
+                            <span class="credits-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-cog"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>SQL + 線性規劃自動排程範例</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card elective">
+                        <div class="course-header">
+                            <h4>MI選修：雲端服務管理</h4>
+                            <span class="credits-badge elective-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-cloud"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>Cloudflare Pages 部署互動修課網站</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card elective">
+                        <div class="course-header">
+                            <h4>MI選修：AI 商業應用</h4>
+                            <span class="credits-badge elective-badge">3學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>LLM 對話資料視覺化 Dashboard</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card elective">
+                        <div class="course-header">
+                            <h4>MI選修：資料視覺化實習</h4>
+                            <span class="credits-badge elective-badge">2學分</span>
+                        </div>
+                        <div class="course-experience">
+                            <i class="fas fa-chart-bar"></i>
+                            <div>
+                                <p class="experience-note">相關經驗：</p>
+                                <p>Tableau 製作人口熱點動態地圖</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 114學年度 台灣科技大學資訊管理學系 雙主修修業計劃</p>
+        </footer>
+    </div>
+
+    <script src="mis-script.js"></script>
+</body>
+</html> 
